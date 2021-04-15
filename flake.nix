@@ -2,9 +2,8 @@
   description = "MAR1D Website";
   inputs.hakyll-flakes.url = "github:Radvendii/hakyll-flakes";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs";
 
-  outputs = { self, hakyll-flakes, flake-utils, nixpkgs }:
+  outputs = { self, hakyll-flakes, flake-utils }:
     flake-utils.lib.eachDefaultSystem (
       system:
       hakyll-flakes.lib.mkAllOutputs {
